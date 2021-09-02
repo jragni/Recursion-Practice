@@ -29,7 +29,7 @@ describe("longest", function () {
 });
 
 describe("everyOther", function () {
-  xit("returns a string with every other character in the input", function () {
+  it("returns a string with every other character in the input", function () {
     expect(everyOther("hello")).toBe("hlo");
     expect(everyOther("banana stand")).toBe("bnn tn");
     expect(everyOther("ddoouubbllee")).toBe("double");
@@ -39,14 +39,14 @@ describe("everyOther", function () {
 });
 
 describe("isPalindrome", function () {
-  xit("returns true if the string is a palindrome", function () {
+  it("returns true if the string is a palindrome", function () {
     expect(isPalindrome("tacocat")).toBe(true);
     expect(isPalindrome("racecar")).toBe(true);
     expect(isPalindrome("a")).toBe(true);
     expect(isPalindrome("helloolleh")).toBe(true);
   });
 
-  xit("returns false if the string is not a palindrome", function () {
+  it("returns false if the string is not a palindrome", function () {
     expect(isPalindrome("tacodog")).toBe(false);
     expect(isPalindrome("az")).toBe(false);
     expect(isPalindrome("goodbye")).toBe(false);
@@ -56,13 +56,13 @@ describe("isPalindrome", function () {
 describe("findIndex", function () {
   let animals = ["duck", "cat", "pony", "cat"];
 
-  xit("returns the first index of the value in the array if the value exists", function () {
+  it("returns the first index of the value in the array if the value exists", function () {
     expect(findIndex(animals, "duck")).toBe(0);
     expect(findIndex(animals, "cat")).toBe(1);
     expect(findIndex(animals, "pony")).toBe(2);
   });
 
-  xit("returns -1 if the value does not exist", function () {
+  it("returns -1 if the value does not exist", function () {
     expect(findIndex(animals, "porcupine")).toBe(-1);
     expect(findIndex(animals, "turtle")).toBe(-1);
   });
@@ -128,4 +128,3 @@ describe("binarySearch", function () {
     expect(binarySearch([1, 2], 11)).toEqual(-1);
   });
 });
-
